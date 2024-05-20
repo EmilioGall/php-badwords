@@ -1,5 +1,10 @@
 <?php
 
+$user_paragraph = $_GET["paragraph"];
+
+$user_word = $_GET["bad-word"];
+
+
 ?>
 
 
@@ -24,9 +29,9 @@
 
       <h2>Paragraph as written:</h2>
 
-      <p></p>
+      <p> <?php echo $user_paragraph; ?> </p>
 
-      <h5>Length:</h5> <span></span>
+      <h5>Length:  <em><?php echo strlen($user_paragraph); ?></em> characters</h5>
 
    </div>
    <!-- /Output Paragraph as written -->
@@ -36,9 +41,9 @@
 
       <h2>Paragraph censored:</h2>
 
-      <p></p>
+      <p> <?php echo str_replace($user_word,"***", $user_paragraph); ?> </p>
 
-      <h5>Length:</h5> <span></span>
+      <h5>Length:  <em><?php echo strlen(str_replace($user_word,"***", $user_paragraph)); ?></em> characters</h5>
 
    </div>
    <!-- /Output censored Paragraph-->
