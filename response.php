@@ -17,7 +17,31 @@
 
 <body>
 
-   <h1>Test</h1>
+   <h1>RESULTS:</h1>
+
+   <!-- Output Paragraph as written -->
+   <div>
+
+      <h2>Paragraph as written:</h2>
+
+      <p></p>
+
+      <h5>Length:</h5> <span></span>
+
+   </div>
+   <!-- /Output Paragraph as written -->
+
+   <!-- Output censored Paragraph-->
+   <div>
+
+      <h2>Paragraph censored:</h2>
+
+      <p></p>
+
+      <h5>Length:</h5> <span></span>
+
+   </div>
+   <!-- /Output censored Paragraph-->
 
 </body>
 
